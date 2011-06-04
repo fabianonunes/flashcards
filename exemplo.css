@@ -1,0 +1,39 @@
+body {
+ background: #A2B5CD;
+ margin: 10% 20% 0% 20%;
+ padding: 0px 0px;
+ font-family: Verdana, Helvetica, "Times New Roman", sans-serif;
+}
+
+p {
+ background: #CAE1FF;
+ border-style: solid;
+ border-width: thin;
+ text-align: center;
+ font-size: 1.8em;
+ padding: 10px;
+}
+
+.opcoes {
+ font-size: 1.2em;
+ margin: 0px;
+ padding: 0px;
+}
+
+ul {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+}
+
+#recuar {
+  text-align: left;
+  clear: left;
+  float: left;
+}
+
+#avancar {
+  text-align: right;
+  clear: right;
+  float: right;  
+}
