@@ -1,8 +1,7 @@
 body {
-	background: #eee;
-	background-image: url('gallerybackuq4.jpg');
+	background: #eee url('gallerybackuq4.jpg');
 	padding: 0px 0px;
-	font-family: sans-serif, Arial, Helvetica;
+	font: 12px sans-serif, Arial, Helvetica;
 }
 
 .card {
@@ -20,8 +19,7 @@ body {
 .card h2,
 .card h3 {
 	color: #333;
-	font-family: 'Oswald', arial, serif;
-	font-weight: 300;
+	font: normal 300 13pt 'Oswald', sans-serif;
 	padding: 6px 20px 8px;
 }
 
@@ -29,17 +27,16 @@ body {
 	text-align:left;
 	background-image: -webkit-linear-gradient(top, #0e8bce 20%, #025986 100%);
 	background-image: -moz-linear-gradient(top, #0e8bce 20%, #025986 100%);
-	box-shadow:	0px 1px 2px rgba(255,255,255,0.35) inset,
+	box-shadow: 0px 1px 2px rgba(255,255,255,0.35) inset,
 				0px 2px 3px rgba(0,0,0,0.4);
 	color: #fff;
-	font-size: 12pt;
 	text-shadow: #000 1px 1px 1px;
 	border-radius: 6px 6px 0 0;
 }
 
 .card h3 {
 	margin-top: 10px;
-	font-size: 14px;
+	font-size: 12pt;
 }
 
 .card p {
