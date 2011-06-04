@@ -1,39 +1,72 @@
 body {
- background: #A2B5CD;
- margin: 10% 20% 0% 20%;
- padding: 0px 0px;
- font-family: Verdana, Helvetica, "Times New Roman", sans-serif;
+	background: #eee;
+	background-image: url('gallerybackuq4.jpg');
+	padding: 0px 0px;
+	font-family: sans-serif, Arial, Helvetica;
 }
 
-p {
- background: #CAE1FF;
- border-style: solid;
- border-width: thin;
- text-align: center;
- font-size: 1.8em;
- padding: 10px;
+.card {
+	position: relative;
+	background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 90%);
+	margin: 20px auto;
+	height: 400px;
+	padding: 0px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+	border-radius: 10px;
+	width: 450px;
 }
 
-.opcoes {
- font-size: 1.2em;
- margin: 0px;
- padding: 0px;
+.card h2,
+.card h3 {
+	color: #333;
+	font-family: 'Oswald', arial, serif;
+	font-weight: 300;
+	padding: 6px 20px 8px;
 }
 
-ul {
- list-style-type: none;
- margin: 0px;
- padding: 0px;
+.card h2 {
+	text-align:left;
+	background-image: -webkit-linear-gradient(top, #0e8bce 20%, #025986 100%);
+	box-shadow:	0px 1px 2px rgba(255,255,255,0.35) inset,
+				0px 2px 3px rgba(0,0,0,0.4);
+	color: #fff;
+	font-size: 12pt;
+	text-shadow: #000 1px 1px 1px;
+	border-radius: 6px 6px 0 0;
 }
 
-#recuar {
-  text-align: left;
-  clear: left;
-  float: left;
+.card h3 {
+	margin-top: 10px;
+	font-size: 14px;
 }
 
-#avancar {
-  text-align: right;
-  clear: right;
-  float: right;  
+.card p {
+	margin-top: 70px;
+	padding: 0px 25px;
+	font-family: 'Open Sans Condensed';
+	font-size: 18pt;
+	text-align: center;
+}
+
+.options {
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	height: 50px;
+	box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+	background: -webkit-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
+	padding: 0 5px;
+}
+.options a {
+	font-family: 'Open Sans Condensed';
+	font-weight: bold;
+	padding: 0px;
+	float: right;
+	font-size:30px;
+	line-height: 40px;
+	color:#444;
+	height: 100%;
+	padding: 0 10px;
+	text-shadow:#fff 1px 1px 1px;
+	text-decoration:none;
 }
