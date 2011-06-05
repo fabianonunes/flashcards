@@ -12,13 +12,13 @@
 			return jQuery(selector).get(0);
 		};
 		m.defaults = {
-			duration: 500
+			duration: 400
 		};
 
 		$('a.next').click(function(){
 
 			m('.question')
-				.set('height', '25%')
+				.set('height', '50%')
 			.end();
 
 		});
@@ -26,7 +26,7 @@
 		$('a.previous').click(function(){
 
 			m('.question')
-				.set('height', '50%')
+				.set('height', '100%')
 			.end();
 
 		});
