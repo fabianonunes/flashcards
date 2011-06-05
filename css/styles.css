@@ -1,5 +1,5 @@
 body {
-	background: #eee url('wood.jpg');
+	background: #eee url('../img/wood.jpg');
 	padding: 0px 0px;
 	font: 12px sans-serif, Arial, Helvetica;
 }
