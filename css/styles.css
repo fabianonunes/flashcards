@@ -14,10 +14,12 @@ body {
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
 	border-radius: 10px;
 	width: 450px;
+	overflow: hidden;
 }
 
 .card h2,
 .card h3 {
+	margin:0;
 	color: #333;
 	font: normal 300 13pt 'Oswald', sans-serif;
 	padding: 6px 20px 8px;
@@ -45,6 +47,7 @@ body {
 	font-family: 'Open Sans Condensed';
 	font-size: 18pt;
 	text-align: center;
+	position: relative;
 }
 
 .options {
