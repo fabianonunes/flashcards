@@ -10,17 +10,25 @@
 }
 
 .labs, footer a.iconpack {
+	cursor: pointer;
 	font: normal 20pt 'IconPack';
 	display: block;
 	width: 30px;
 	height: 100%;
 	line-height: 30px;
 	float: left;
-	color: #999;
-	text-shadow: 1px 1px 1px #fff;
+	color: #aaa;
+	text-shadow: 1px 1px 0px #fff;
 	padding: 0 7px;
 	margin:0;
 	background:transparent;
+	transition: color .5s ease-out;
+	-webkit-transition: color .5s ease-out;
+	-moz-transition: color .5s ease-out;
+}
+
+a.iconpack:hover {
+	color: #666;
 }
 
 a.iconpack.time:before {
