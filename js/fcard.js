@@ -11,8 +11,9 @@
 		m.select = function(selector) {
 			return jQuery(selector).get(0);
 		};
+
 		m.defaults = {
-			duration: 400
+			duration: 500
 		};
 
 		$('a.next').click(function(){
@@ -30,7 +31,6 @@
 			.end();
 
 		});
-
 
 	});
 		

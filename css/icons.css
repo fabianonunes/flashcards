@@ -1,0 +1,31 @@
+
+@font-face {
+	font-family: 'IconPack';
+	src: url('fonts/iconpack.eot');
+	src: local('IconPack'),
+		url('fonts/iconpack.woff') format('woff'),
+		url('fonts/iconpack.otf') format('opentype'),
+		url('fonts/iconpack.svg#IconPack') format('svg');
+	
+}
+
+.labs, footer a.iconpack {
+	font: normal 20pt 'IconPack';
+	display: block;
+	width: 30px;
+	height: 100%;
+	line-height: 30px;
+	float: left;
+	color: #999;
+	text-shadow: 1px 1px 1px #fff;
+	padding: 0 7px;
+	margin:0;
+	background:transparent;
+}
+
+a.iconpack.time:before {
+	content: 's';
+}
+a.iconpack.star:before {
+	content: 'a';
+}
