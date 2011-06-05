@@ -91,12 +91,10 @@ body {
 
 .deck footer a {
 	outline: 0;
-	font-family: 'Open Sans Condensed';
-	font-weight: bold;
+	font: bold 30px 'Open Sans Condensed';
+	line-height: 30px;
 	padding: 0px;
 	float: right;
-	font-size: 30px;
-	line-height: 30px;
 	color:#444;
 	height: 100%;
 	padding: 0 10px;
