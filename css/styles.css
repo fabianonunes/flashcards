@@ -1,32 +1,35 @@
+html {
+	height: 100%;
+	padding: 0;
+}
 body {
 	background: #eee url('../img/wood.jpg');
 	padding: 0px 0px;
 	font: 12px sans-serif, Arial, Helvetica;
+	height: 100%;
 }
 
-.card {
+.deck {
 	position: relative;
 	background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 90%);
 	background: -moz-linear-gradient(top, #fff 0%, #f0f0f0 90%);
+	background: -o-linear-gradient(top, #fff 0%, #f0f0f0 90%);
 	margin: 20px auto;
-	height: 400px;
 	padding: 0px;
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
 	border-radius: 10px;
 	width: 450px;
+	overflow: hidden;
+	display: block;
 }
 
-.card h2,
-.card h3 {
-	color: #333;
+.deck h2 {
+	margin:0;
 	font: normal 300 13pt 'Oswald', sans-serif;
 	padding: 6px 20px 8px;
-}
-
-.card h2 {
-	text-align:left;
 	background-image: -webkit-linear-gradient(top, #0e8bce 20%, #025986 100%);
 	background-image: -moz-linear-gradient(top, #0e8bce 20%, #025986 100%);
+	background-image: -o-linear-gradient(top, #0e8bce 20%, #025986 100%);
 	box-shadow: 0px 1px 2px rgba(255,255,255,0.35) inset,
 				0px 2px 3px rgba(0,0,0,0.4);
 	color: #fff;
@@ -34,20 +37,46 @@ body {
 	border-radius: 6px 6px 0 0;
 }
 
-.card h3 {
-	margin-top: 10px;
-	font-size: 12pt;
+.card {
+	height: 300px;
+	margin: 0px 0 50px;
+	padding: 0;
 }
 
-.card p {
-	margin-top: 70px;
-	padding: 0px 25px;
-	font-family: 'Open Sans Condensed';
-	font-size: 18pt;
+.card div {
+	padding: 0 45px;
+	font: normal 18pt 'Open Sans Condensed';
 	text-align: center;
 }
 
-.options {
+.deck div.question {
+	height: 100%;
+}
+
+.deck div.answer {
+	height: 50%;
+}
+
+.deck p {
+
+	margin: 0;
+
+	width: 100%;
+	height: 100%;
+
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+
+}
+
+.deck footer {
 	border-radius: 0 0 4px 4px;
 	position: absolute;
 	bottom: 0; left: 0; right: 0;
@@ -55,9 +84,11 @@ body {
 	box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
 	background: -webkit-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
 	background: -moz-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
+	background: -o-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
 	padding: 0 5px;
 }
-.options a {
+.deck footer a {
+	outline: 0;
 	font-family: 'Open Sans Condensed';
 	font-weight: bold;
 	padding: 0px;
