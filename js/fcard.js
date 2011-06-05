@@ -12,18 +12,25 @@
 			return jQuery(selector).get(0);
 		};
 		m.defaults = {
-			duration: 900
+			duration: 500
 		};
 
 		$('a.next').click(function(){
-			
-			m('.card p')
-				.set('left', 450)
-				.end(function(){
-					
-				});
+
+			m('.question')
+				.set('height', '25%')
+			.end();
 
 		});
+
+		$('a.previous').click(function(){
+
+			m('.question')
+				.set('height', '50%')
+			.end();
+
+		});
+
 
 	});
 		
