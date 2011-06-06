@@ -106,7 +106,7 @@ footer.options {
 	position: absolute;
 	bottom: 0; left: 0; right: 0;
 	height: 40px;
-	box-shadow: 0 -1px 10px rgba(0,0,0,0.15);
+	box-shadow: 0 -1px 6px rgba(0,0,0,0.15);
 	background: -webkit-linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%);
 	background: -moz-linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%);
 	background: -o-linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%);
