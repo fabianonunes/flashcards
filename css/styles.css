@@ -16,7 +16,7 @@ body {
 	background: -o-linear-gradient(top, #fff 0%, #e6e6e6 90%);
 	margin: 20px auto;
 	padding: 0px;
-	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
 	border-radius: 10px;
 	width: 450px;
 	overflow: hidden;
@@ -38,7 +38,7 @@ body {
 }
 
 .card {
-	height: 300px;
+	height: 350px;
 	margin: 0px 0 40px;
 	padding: 0;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .deck div.question {
-	height: 100%;
+	height: 50%;
 }
 
 .deck div.answer {
@@ -63,7 +63,6 @@ body {
 	font: 12pt Arial, sans-serif;
 	height: 20%;
 	text-align: center;
-	overflow: hidden;
 }
 
 .deck .tools div {
@@ -72,10 +71,28 @@ body {
 }
 
 .tools a.iconic {
-	float:right;
+	float: right;
+	padding: 0 10px;
 	font-size: 24pt;
 	color: rgba(0,0,0,0.12);
 	text-shadow: 1px 1px 0px #fff;
+}
+
+.tools a.iconic div {
+	width: 60px;
+	padding: 4px 0;
+	font: normal 11px arial;
+	display: none;
+	position: relative;
+	text-shadow: none;
+	color: #fff;
+	top:-8px;
+	left:-15px;
+	background: rgba(0,0,0,0.4);
+}
+
+.tools a.iconic:hover div {
+	display:block;
 }
 
 .tools a.iconic:hover ~ a.iconic, .tools a.iconic:hover {
@@ -119,7 +136,7 @@ footer.options a {
 	line-height: 30px;
 	padding: 0px;
 	float: right;
-	color:#444;
+	color: #444;
 	height: 100%;
 	padding: 0 10px;
 	text-shadow:#fff 1px 1px 1px;
