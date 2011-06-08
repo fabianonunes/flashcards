@@ -50,7 +50,7 @@ body {
 }
 
 .deck div.question {
-	height: 50%;
+	height: 100%;
 }
 
 .deck div.answer {
