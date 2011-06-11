@@ -1,0 +1,20 @@
+{
+  "name": "smx",
+  "description": "SMS sender",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+      "express": "2.x"
+    , "express-resource": ">= 0.0.1"
+    , "express-expose": ">= 0.0.1"
+    , "jade": "0.9.x"
+    , "github-flavored-markdown": "1.0.0"
+    , "stylus": "*"
+    , "nib": "*"
+    , "winston" : "*"
+    , "underscore": "*"
+    , "mongoose": "*"
+    , "socket.io": "*"
+  },
+  "engines": { "node": ">= 0.4.4" }
+}

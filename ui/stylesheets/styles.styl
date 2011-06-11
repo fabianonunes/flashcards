@@ -1,0 +1,148 @@
+
+@import 'nib'
+
+body
+  padding 0
+  font 12px sans-serif, Arial, Helvetica
+  margin 0
+
+div.nav
+  padding 0
+  background #f4f4f4
+  box-shadow 0px 0px 15px #000
+  width 200px
+  position absolute
+  top 0
+  bottom 0
+  z-index 1
+
+div.main
+  background #eee url('../img/wood.jpg')
+  position absolute
+  top 0
+  bottom 0
+  left 200px
+  right 0
+
+div.deck
+  position relative
+  background linear-gradient(top, #fff 0%, #e6e6e6 90%)
+  margin 20px auto
+  padding 0px
+  box-shadow 0px 0px 20px rgba(0,0,0,0.7)
+  border-radius 10px
+  width 450px
+  overflow hidden
+  display block
+
+  & h2
+    margin 0
+    font normal normal 17px 'MuseoSans500', sans-serif
+    padding 0 20px
+    line-height 35px
+    background-image linear-gradient(top, #0e8bce 20%, #025986 100%)
+    box-shadow 0px 1px 2px rgba(255,255,255,0.35) inset, 0px 2px 3px rgba(0,0,0,0.4)
+    color #fff
+    text-shadow #000 1px 1px 1px
+    border-radius 6px 6px 0 0
+
+  & .question
+    height 100%
+
+  & .answer
+    height 30%
+    font-size 16pt
+
+
+div.card
+  height 350px
+  margin 0px 0 40px
+  padding 0
+
+  & div
+    padding 0 45px
+    font normal 22pt 'Open Sans Condensed'
+    text-align center
+
+
+.tools
+  cursor pointer
+  font 12pt Arial, sans-serif
+  height 20%
+  text-align center
+
+.deck .tools div
+  display inline-block
+  padding 0
+
+.tools a.iconic
+  float right
+  padding 0 10px
+  font-size 24pt
+  color rgba(0,0,0,0.12)
+  text-shadow 1px 1px 0px #fff
+
+.tools a.iconic div
+  width 60px
+  padding 4px 0
+  font normal 11px arial
+  display none
+  position relative
+  text-shadow none
+  color #fff
+  top -8px
+  left -15px
+  background rgba(0,0,0,0.4)
+
+.tools a.iconic:hover div
+  display block
+
+.tools a.iconic:hover ~ a.iconic, .tools a.iconic:hover
+  color #aaa
+
+.deck p
+  margin 0
+  width 100%
+  height 100%
+
+  display -moz-box
+  display -webkit-box
+  display box
+
+  box-orient vertical
+  box-pack center
+  box-align center
+
+  -webkit-box-orient vertical
+  -webkit-box-pack center
+  -webkit-box-align center
+
+  -moz-box-orient vertical
+  -moz-box-pack center
+  -moz-box-align center
+
+footer.options
+  border-radius 0 0 4px 4px
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  height 40px
+  box-shadow 0 -1px 6px rgba(0,0,0,0.15)
+  background linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%)
+  padding 0 5px
+
+footer.options a
+  outline 0
+  font bold 30px 'Open Sans Condensed'
+  line-height 30px
+  padding 0 10px
+  float left
+  color #444
+  height 100%
+  text-shadow #fff 1px 1px 1px
+  text-decoration none
+
+footer.options a.previous, footer.options a.next
+  float right
+
