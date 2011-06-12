@@ -206,11 +206,11 @@ th {
   font-style: normal;
 }
 body {
-  font: 12px sans-serif, Arial, Helvetica;
+  font: normal 10pt sans-serif, Arial, Helvetica;
 }
 div.nav {
   z-index: 1;
-  width: 200px;
+  width: 290px;
   background: #f4f4f4;
   -webkit-box-shadow: 0 0 15px #000;
   -moz-box-shadow: 0 0 15px #000;
@@ -225,7 +225,7 @@ div.main {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 200px;
+  left: 290px;
 }
 div.deck {
   width: 450px;
@@ -245,7 +245,7 @@ div.deck h2 {
   color: #fff;
   padding: 0 20px;
   text-shadow: #000 1px 1px 1px;
-  font: normal 17px/35px "MuseoSans500", sans-serif;
+  font: normal 18px/38px "MuseoSans500", sans-serif;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #0e8bce), color-stop(1, #025986));
   background-image: -webkit-linear-gradient(top, #0e8bce 20%, #025986 100%);
   background-image: -moz-linear-gradient(top, #0e8bce 20%, #025986 100%);
@@ -335,6 +335,31 @@ footer.options a {
 footer.options a.previous,
 footer.options a.next {
   float: right;
+}
+div.search {
+  padding: 13px 0;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fdfdfd), color-stop(0.5, #f0f0f0), color-stop(0.5, #e3e3e3), color-stop(0.5, #e9e9e9), color-stop(1, #eee));
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
+  background: linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);
+}
+div.search input {
+  margin: 0;
+  width: 88%;
+  padding: 5px 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  -webkit-box-shadow: 1px 1px 3px #ccc inset;
+  -moz-box-shadow: 1px 1px 3px #ccc inset;
+  box-shadow: 1px 1px 3px #ccc inset;
+}
+div.search input:focus {
+  outline: none;
+  border: 1px solid rgba(14,139,206,0.5);
 }
 @font-face {
   font-family: "IconPack";

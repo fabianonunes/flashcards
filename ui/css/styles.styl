@@ -3,10 +3,10 @@
 @import 'webfonts'
 @import 'utils'
 
-nav-width = 200px
+nav-width = 290px
 
 body
-	font 12px sans-serif, Arial, Helvetica
+	font normal 10pt sans-serif, Arial, Helvetica
 
 div.nav
 	z-index 1
@@ -25,7 +25,6 @@ div.deck
 	overflow hidden
 	margin 20px auto
 	position relative
-	//border-radius 8px
 	box-shadow 0 0 20px rgba(0,0,0,0.7)
 	background linear-gradient(top, #fff 0%, #e6e6e6 90%)
 
@@ -33,9 +32,8 @@ div.deck
 		margin 0
 		color #fff
 		padding 0 20px
-		//border-radius 8px 8px 0 0
 		text-shadow #000 1px 1px 1px
-		font normal 17px/35px 'MuseoSans500', sans-serif
+		font normal 18px/38px 'MuseoSans500', sans-serif
 		background-image linear-gradient(top, #0e8bce 20%, #025986 100%)
 		box-shadow 0 1px 2px rgba(#fff, 0.35) inset, 0 2px 3px rgba(#000, 0.4)
 
@@ -47,7 +45,6 @@ div.deck
 			padding 0 45px
 			text-align center
 			font normal 22pt 'Open Sans Condensed'
-
 
 		& .question
 			height 50%
@@ -84,7 +81,6 @@ div.deck
 footer.options
 	height 40px
 	padding 0 5px
-	//border-radius 0 0 4px 4px
 	absolute(bottom 0, left 0, right 0)
 	box-shadow 0 -1px 6px rgba(#000, 0.15)
 	background linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%)
@@ -101,6 +97,24 @@ footer.options
 
 	& a.previous, & a.next
 		float right
+
+
+div.search
+	padding 13px 0
+	text-align center
+	border-bottom 1px solid #bbb
+	background linear-gradient(top, #fdfdfd, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee)
+	input
+		margin 0
+		width 88%
+		padding 5px 8px
+		border-radius(10px)
+		border 1px solid #bbb
+		box-shadow 1px 1px 3px #ccc inset
+		&:focus
+			outline: none
+			border: 1px solid rgba(#0e8bce, 0.5)
+
 
 @import 'icons'
 @import 'iconic'
