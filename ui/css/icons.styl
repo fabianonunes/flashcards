@@ -1,0 +1,34 @@
+@font-face
+  font-family: 'IconPack'
+  src: local('IconPack'), url('fonts/iconpack.woff') format('woff'), url('fonts/iconpack.otf') format('opentype'), url('fonts/iconpack.svg#IconPack') format('svg')
+
+footer a.iconpack
+  font: normal 20pt 'IconPack'
+  line-height: 30px
+
+footer a.iconic
+  font: normal 20pt 'IconicStroke'
+  line-height: 45px
+
+footer a.iconpack, footer a.iconic
+  text-align: center
+  cursor: pointer
+  width: 30px
+  height: 100%
+  color: #aaa
+  text-shadow: 1px 1px 0px #fff
+  padding: 0 7px
+  margin: 0
+  transition: color .4s ease-out
+  -webkit-transition: color .4s ease-out
+  -moz-transition: color .4s ease-out
+
+a.iconpack:hover, a.iconic:hover, a.iconpack.active
+  color: #666
+
+a.iconpack.time:before
+  content: 's'
+
+a.iconpack.star:before
+  content: 'a'
+

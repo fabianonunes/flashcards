@@ -1,0 +1,106 @@
+@import 'nib'
+@import 'normalize'
+@import 'webfonts'
+@import 'utils'
+
+nav-width = 200px
+
+body
+	font 12px sans-serif, Arial, Helvetica
+
+div.nav
+	z-index 1
+	width nav-width
+	background #f4f4f4
+	box-shadow 0 0 15px #000
+	absolute(top 0, bottom 0)
+
+
+div.main
+	background #eee url('../img/wood.jpg')
+	absolute(top 0, right 0, bottom 0, left nav-width)
+
+div.deck
+	width 450px
+	overflow hidden
+	margin 20px auto
+	position relative
+	//border-radius 8px
+	box-shadow 0 0 20px rgba(0,0,0,0.7)
+	background linear-gradient(top, #fff 0%, #e6e6e6 90%)
+
+	& h2
+		margin 0
+		color #fff
+		padding 0 20px
+		//border-radius 8px 8px 0 0
+		text-shadow #000 1px 1px 1px
+		font normal 17px/35px 'MuseoSans500', sans-serif
+		background-image linear-gradient(top, #0e8bce 20%, #025986 100%)
+		box-shadow 0 1px 2px rgba(#fff, 0.35) inset, 0 2px 3px rgba(#000, 0.4)
+
+	& .card
+		height 350px
+		margin 0 0 40px
+
+		& div
+			padding 0 45px
+			text-align center
+			font normal 22pt 'Open Sans Condensed'
+
+
+		& .question
+			height 50%
+
+		& .answer
+			height 30%
+			font-size 16pt
+
+		& .tools
+			height 20%
+			cursor pointer
+			text-align center
+			font 12pt Arial, sans-serif
+
+			& div
+				display inline-block // center the right floateds children
+
+			& a.iconic:hover ~ a.iconic, & a.iconic:hover
+				color #aaa
+
+			& a.iconic
+				float right // reverse in the previous general sibling selector (~)
+				padding 0 10px
+				font-size 24pt
+				color rgba(#000, 0.12)
+				text-shadow 1px 1px 0 #fff
+
+		& p
+			margin 0
+			width 100%
+			height 100%
+			box(center, center, vertical)
+
+footer.options
+	height 40px
+	padding 0 5px
+	//border-radius 0 0 4px 4px
+	absolute(bottom 0, left 0, right 0)
+	box-shadow 0 -1px 6px rgba(#000, 0.15)
+	background linear-gradient(top, #f0f0f0 0%,#cfcfcf 100%)
+
+	& a
+		outline 0
+		color #444
+		float left
+		height 100%
+		padding 0 10px
+		text-decoration none
+		text-shadow #fff 1px 1px 1px
+		font bold 30px/30px 'Open Sans Condensed'
+
+	& a.previous, & a.next
+		float right
+
+@import 'icons'
+@import 'iconic'
