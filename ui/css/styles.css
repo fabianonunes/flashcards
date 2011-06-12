@@ -49,25 +49,27 @@ div.deck .card{height:350px;margin:0 0 40px;}
 div.deck .card div{padding:0 45px;text-align:center;font:normal 22pt "Open Sans Condensed"}
 div.deck .card .question{height:50%}
 div.deck .card .answer{height:30%;font-size:16pt}
-div.deck .card .tools{height:20%;cursor:pointer;text-align:center;font:12pt Arial,sans-serif;}
+div.deck .card .tools{height:20%;cursor:pointer;font:12pt Arial,sans-serif;}
 div.deck .card .tools div{display:inline-block}
 div.deck .card .tools a.iconic:hover ~ a.iconic,div.deck .card .tools a.iconic:hover{color:#aaa}
-div.deck .card .tools a.iconic{float:right;padding:0 10px;font-size:24pt;color:rgba(0,0,0,0.12);text-shadow:1px 1px 0 #fff}
+div.deck .card .tools a.iconic{float:right;font-size:24pt;color:rgba(0,0,0,0.12)}
 div.deck .card p{margin:0;width:100%;height:100%;display:box;display:-moz-box;display:-webkit-box;box-pack:center;-moz-box-pack:center;-webkit-box-pack:center;box-align:center;-moz-box-align:center;-webkit-box-align:center;box-orient:vertical;-moz-box-orient:vertical;-webkit-box-orient:vertical}
 footer{position:absolute;bottom:0;left:0;right:0;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #cfcfcf));background:-webkit-linear-gradient(top, #f0f0f0 0%, #cfcfcf 100%);background:-moz-linear-gradient(top, #f0f0f0 0%, #cfcfcf 100%);background:linear-gradient(top, #f0f0f0 0%, #cfcfcf 100%);-webkit-box-shadow:0 -1px 6px rgba(0,0,0,0.15);-moz-box-shadow:0 -1px 6px rgba(0,0,0,0.15);box-shadow:0 -1px 6px rgba(0,0,0,0.15);}
 footer.options{height:40px;padding:0 5px;}
-footer.options a{outline:0;color:#444;float:left;height:100%;padding:0 10px;text-decoration:none;text-shadow:#fff 1px 1px 1px;font:bold 30px/30px "Open Sans Condensed";}
-footer.options a.previous,footer.options a.next{float:right}
+footer.options a{outline:0;float:left;text-decoration:none;font:bold 30px/30px "Open Sans Condensed";}
+footer.options a.icon{color:#444;padding:0 4px;float:right}
 div.nav{z-index:1;width:290px;background:#f4f4f4;-webkit-box-shadow:0 0 15px #000;-moz-box-shadow:0 0 15px #000;box-shadow:0 0 15px #000;position:absolute;top:0;bottom:0;}
 div.nav .search{padding:13px 0;text-align:center;border-bottom:1px solid #bbb;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fdfdfd), color-stop(0.5, #f0f0f0), color-stop(0.5, #e3e3e3), color-stop(0.5, #e9e9e9), color-stop(1, #eee));background:-webkit-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);background:-moz-linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);background:linear-gradient(top, #fdfdfd 0%, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee 100%);}
 div.nav .search input{margin:0;width:88%;padding:5px 8px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:1px solid #bbb;-webkit-box-shadow:1px 1px 3px #ccc inset;-moz-box-shadow:1px 1px 3px #ccc inset;box-shadow:1px 1px 3px #ccc inset;}
 div.nav .search input:focus{outline:none;border:1px solid rgba(14,139,206,0.5)}
+div.nav ul{list-style-type:none;padding:0;margin:0;}
+div.nav ul li{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #efefef), color-stop(1, #fafafa));background:-webkit-linear-gradient(top, #efefef 0%, #fafafa 100%);background:-moz-linear-gradient(top, #efefef 0%, #fafafa 100%);background:linear-gradient(top, #efefef 0%, #fafafa 100%);height:40px}
 div.nav footer{height:40px}
 @font-face{font-family:"IconPack";src:local("IconPack"),url("fonts/iconpack.woff") format("woff"),url("fonts/iconpack.otf") format("opentype"),url("fonts/iconpack.svg#IconPack") format("svg")}
 footer a.iconpack{font:normal 20pt/30px "IconPack"}
 footer a.iconic{font:normal 20pt/45px "IconicStroke"}
-footer a.iconpack,footer a.iconic{margin:0;color:#aaa;width:30px;height:100%;padding:0 7px;cursor:pointer;text-align:center;text-shadow:1px 1px 0 #fff;-webkit-transition:color .4s ease-out;-moz-transition:color .4s ease-out;}
-footer a.iconpack:hover,footer a.iconic:hover{color:#666}
+a.iconpack,a.iconic,a.icon{margin:0;color:#aaa;width:30px;height:100%;padding:0 10px;cursor:pointer;text-align:center;text-shadow:1px 1px 0 #fff;-webkit-transition:color .4s ease-out;-moz-transition:color .4s ease-out;}
+a.iconpack:hover,a.iconic:hover,a.icon:hover,a.iconpack:active,a.iconic:active,a.icon:active,a.iconpack.active,a.iconic.active,a.icon.active{color:#666}
 .iconpack.time:before{content:"s"}
 .iconpack.star:before{content:"a"}
 .iconic{color:inherit;font-family:"IconicStroke";}

@@ -8,19 +8,19 @@ footer a.iconpack
 footer a.iconic
 	font: normal 20pt/45px 'IconicStroke'
 
-footer a.iconpack, footer a.iconic
+a.iconpack, a.iconic, a.icon
 	margin: 0
 	color: #aaa
 	width: 30px
 	height: 100%
-	padding: 0 7px
+	padding: 0 10px
 	cursor: pointer
 	text-align: center
 	text-shadow: 1px 1px 0px #fff
 	transition: color .4s ease-out
 
-footer a.iconpack:hover, footer a.iconic:hover
-	color: #666
+	&:hover, &:active, &.active
+		color: #666
 
 .iconpack
 	&.time:before
