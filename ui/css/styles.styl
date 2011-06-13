@@ -3,7 +3,7 @@
 @import 'webfonts'
 @import 'utils'
 
-nav-width = 310px
+nav-width = 320px
 
 html
 	overflow auto
@@ -23,7 +23,7 @@ div.deck
 	box-shadow 0 0 20px rgba(0,0,0,0.7)
 	background linear-gradient(top, #fff 0%, #e6e6e6 90%)
 
-	& h2
+	h2
 		margin 0
 		color #fff
 		padding 0 20px
@@ -32,31 +32,31 @@ div.deck
 		background-image linear-gradient(top, #0e8bce 20%, #025986 100%)
 		box-shadow 0 1px 2px rgba(#fff, 0.35) inset, 0 2px 3px rgba(#000, 0.4)
 
-	& .card
+	.card
 		height 350px
 		margin 0 0 40px
 
-		& div
+		div
 			padding 0 45px
 			text-align center
 			font normal 22pt 'Open Sans Condensed'
 
-		& .question
+		.question
 			height 50%
 
-		& .answer
+		.answer
 			height 30%
 			font-size 16pt
 
-		& .tools
+		.tools
 			height 20%
 			cursor pointer
 			font 12pt Arial, sans-serif
 
-			& div
+			div
 				display inline-block // center the right floateds children
 
-			& a.iconic:hover ~ a.iconic, & a.iconic:hover
+			a.iconic:hover ~ a.iconic, & a.iconic:hover
 				color #aaa
 
 			& a.iconic
@@ -79,7 +79,7 @@ footer
 		height 40px
 		padding 0 5px
 
-		& a
+		a
 			outline 0
 			float left
 			text-decoration none
@@ -97,49 +97,56 @@ div.nav
 	box-shadow 0 0 15px #000
 	absolute(top 0, bottom 0)
 
-	& .search
+	.search
 		padding 13px 0
 		text-align center
 		border-bottom 1px solid #bbb
 		background linear-gradient(top, #fdfdfd, #f0f0f0 50%, #e3e3e3 50%, #e9e9e9 50%, #eee)
 
-		& input
+		input
 			margin 0
 			width 88%
 			padding 5px 8px
 			border-radius(10px)
 			border 1px solid #bbb
-			box-shadow 1px 1px 3px #ccc inset
+			box-shadow 1px 1px 3px #ccc inset, 1px 1px 0 #fff
 			&:focus
 				outline none
 				border 1px solid rgba(#0e8bce, 0.5)
 	
-	& ul
+	ul
 		list-style-type none
 		padding 0
 		margin 0
 
 		li-gab = 50px
 
-		& li
+		li
 			color #333
-			height li-gab
 			padding 10px
-			border-top 1px solid #fff
-			border-bottom 1px solid #ddd
-			font normal 10pt 'Cantarell'
-			background linear-gradient(top, #f9f9f9 20%, #f0f0f0 100%)
-			box-shadow 0 2px 7px rgba(#333, 0.1),  0 -1px 0 #fff inset
+			height li-gab
 			position relative
+			border-top 1px solid #fff
+			font normal 14px 'Cantarell'
+			text-shadow #fff 1px 1px 1px
+			border-bottom 1px solid #ddd
+			background linear-gradient(top, #f9f9f9 20%, #f0f0f0 100%)
+			box-shadow 0 2px 7px rgba(#333, 0.1),  0 -1px 3px #fff inset
 
-			div.progress
-				absolute(right 15px, bottom 10px, left li-gab+15)
-				box-shadow 0 1px 0 #fff, 0 1px 0 #ccc inset
-				background rgba(#ddd, 0.4)
-				height 4px
+			.details
+				text-shadow #fff 1px 1px 1px
+				font-size 9pt
+				color #aaa
+
+			.progress
+				absolute(right 15px, bottom 8px, left li-gab+15)
+				border-top 1px solid #d6d6d6
+				border-bottom 1px solid #fff
+				background rgba(#ddd, 0.3)
+				height 3px
 
 				div
-					background #ccc
+					background #d6d6d6
 					height 100%
 				&.p20 div
 					width 20%
@@ -148,26 +155,32 @@ div.nav
 				&.p60 div
 					width 60%
 
-
-
 			div.img
 				width li-gab
 				float left
 				height 100%
 				margin-right 10px
 
-
-		li_
-			font normal 10pt 'Cantarell'
-			padding 8px
-			margin 7px
-			border-radius 5px
-			box-shadow 1px 1px 2px rgba(#000, 0.4), 0 -1px 0 #fff inset
-			background linear-gradient(top, #f9f9f9 0%, #f0f0f0 100%);
-			height 40px
-
-		
 	footer
-		height 40px
+		padding 0
+		height 33px
+		overflow hidden
+		border-top 1px solid #303030
+		box-shadow 0 1px 0 rgba(#fff, 0.3) inset, -1px -2px 10px rgba(#000, 0.4)
+		background linear-gradient(top, #404040 0%,#303030 100%)
+
+		a
+			color #ccc
+			float left
+			height 100%
+			display block
+			font-size 24px
+			padding-top 1px
+			line-height 40px
+			text-shadow 1px 1px 0 #000
+			box-shadow -1px 0 0 rgba(#fff, 0.11) inset, -2px 0 0 rgba(#000, 0.2) inset
+
+			&:hover
+				color #fff
 
 @import 'icons'
