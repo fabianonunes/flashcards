@@ -54,13 +54,13 @@ body
 			font 12pt Arial, sans-serif
 
 			div
-				display inline-block // center the right floateds children
+				unicode-bidi bidi-override
+				direction rtl
 
 			a.iconic:hover ~ a.iconic, & a.iconic:hover
 				color #aaa
 
 			& a.iconic
-				float right // reverse in the previous general sibling selector (~)
 				font-size 24pt
 				color rgba(#000, 0.12)
 
@@ -113,7 +113,7 @@ footer
 			&:focus
 				outline none
 				border 1px solid rgba(#0e8bce, 0.5)
-	
+
 	ul
 		list-style-type none
 		padding 0
